@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storange</title>
+    <style>
+        :root {
+            --color: black;
+        }
+        h1 {
+            color: var(--color);
+        }
+    </style>
+</head>
+<body>
+    <h1>Storange</h1>
+    <p>Nhập key cần tìm</p>
+    <input type="text" name="" id="keyword">
+    <button class="search">Tìm giá trị</button>
+    <p class="show"></p>
+
+
+
+    <script>
+        localStorage.setItem('name', JSON.stringify('Bui Chi Binh'));
+        localStorage.setItem('age', JSON.stringify('19') );
+
+        let myName = localStorage.getItem('name');
+        let search = document.querySelector('.search');
+        search.addEventListener('click', function () {
+            let inp = document.getElementById('keyword');
+            let value = JSON.parse(localStorage.getItem(inp.value));
+            if (value) {
+                document.querySelector('.show').innerHTML = "Giá trị tìm được: " + value;
+            }
+            else {
+                document.querySelector('.show').innerHTML = "Key không hợp lệ"
+            }
+        })
+        document
+    </script>
+</body>
+</html>
