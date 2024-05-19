@@ -27,7 +27,7 @@ function initializeSlider(sliderContainer, dotContainer) {
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => currentSlide(index));
     });
-    
+
     let isDown = false;
     let startX;
     let walk;
