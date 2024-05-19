@@ -1,0 +1,77 @@
+:root {
+    --body-font: 'Chilanka', cursive;
+    --heading-font: 'Chilanka', cursive;
+    --secondary-font: 'Montserrat', sans-serif;
+    --title-font-color: #727272;
+    --font-bold: #41403e;
+    --color-background: #F9F3EC;
+    --color: #DEAD6F;
+    --color-border: #dbdbdb;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.banner-contact {
+    background-color: var(--color-background);
+    padding: 1.5rem 0;
+}
+.banner-items {
+    padding: 4rem 0;
+}
+.banner-items h2 {
+    font-size: 5rem;
+}
+#contact-us {
+    margin: 6rem 0;
+}
+.content-box {
+    margin-top: 2.5rem;
+    line-height: 2;
+}
+.content-box div p a {
+    text-decoration: none;
+    color: #111;
+}
+
+#form div.block input {
+    width: 100%;
+    padding: 17px 0 17px 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+.first-inp input {
+    width: 265px;
+    padding: 17px 0 17px 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+#form .first-inp {
+    display: flex;
+    justify-content: space-between;
+}
+#form div textarea {
+    width: 100%;
+    height: 9.5rem;
+    padding: 17px 0 17px 20px;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+}
+#form div button {
+    width: 100%;
+    padding: 20px 0;
+    background-color: var(--font-bold);
+    color: #fff;
+    font-size: 1.25rem;
+    border: none;
+}
+#form div input:focus {
+    outline: none;
+    border: 1px solid var(--font-bold);
+}
+#form div textarea:focus {
+    outline: none;
+    border: 1px solid var(--font-bold);
+}

@@ -141,7 +141,7 @@ body {
 
 .banner-img {
     width: 451px;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .banner_content--start {
@@ -353,15 +353,16 @@ body {
 
 .text-large {
     font-size: 2rem;
-    color: var(--title-font-color);
+    color: #908f8d;
     width: 685px;
     line-height: 2;
+    margin: 48px 0;
 }
 
 .slider-flex-center {
     display: flex;
     justify-content: center;
-    margin-left: 150px;
+    margin-left: 65px;
 }
 
 .text-blacks {
@@ -376,7 +377,7 @@ body {
 
 .positon-icon {
     position: absolute;
-    top: -100px;
+    top: -40px;
     left: 100px;
 }
 
@@ -469,6 +470,9 @@ body {
 .blog-title-link h2 {
     font-size: 4rem;
     color: var(--font-bold);
+}
+.position-relative {
+    margin: 30px 0 50px;
 }
 
 .position-relative a img {
@@ -672,4 +676,55 @@ footer {
 
 .coment button svg {
     color: #fff;
+}
+.color-in {
+    color: var(--color);
+}
+
+.slider {
+    position: relative;
+    /* width: 100%; */
+    /* max-width: 100%; */
+    overflow: hidden;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    cursor: grab;
+}
+
+.slide {
+    width: 1116px;
+    min-width: 100%;
+    box-sizing: border-box;
+    margin: 0 12px;
+}
+
+.slider .dots {
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.slider .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slider .dot.active {
+    background-color: #717171;
+}
+
+.grabbing {
+    cursor: grabbing;
 }
