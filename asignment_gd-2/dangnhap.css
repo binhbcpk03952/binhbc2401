@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f3f3f3;
+    font-family: sans-serif ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 150px 0;
+}
+#name, #password{
+    border: hidden;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 5px;
+}
+
+#log-in{
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    width: 500px;
+    max-width: 500px;
+    height: 300px;
+    max-height: 100%;
+}
+label{
+    font-weight: bold;
+}
+.log-in_submit{
+    border: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    border-radius: 3px;
+    height: 33px;
+    width: 334px;
+    transition: 0.5s ease;
+}
+.log-in_user, .log-in_pass{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 2px 5px;
+    width: 330px;
+    height: 30px;
+    
+}
+.log-in_signin{
+    font-size: 0.9rem;
+}
+.log-in_submit:hover{
+    background-color: #DBDBDB;
+}
+#slogan{
+    margin: 20px 0;
+    width: 500px;
+}
+#slogan h1{
+    color: #1C435C;
+    margin-bottom: 10px;
+    font-weight: 550;
+}

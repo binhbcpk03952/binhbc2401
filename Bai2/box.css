@@ -1,0 +1,12 @@
+body {
+    font-size: 100%;   /* theo font size mac dinh cua trinh duyet (16px) */
+}
+
+h2{
+    font-size: 1.9rem;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;  
+}

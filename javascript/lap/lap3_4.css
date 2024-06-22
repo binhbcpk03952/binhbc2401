@@ -1,0 +1,103 @@
+body{
+    font-family: sans-serif;
+    padding: 50px 50px;
+}
+button:active{
+    background-color:rgb(117, 105, 104) ;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+.bai-1 {
+    text-align: center;
+}
+.bai-1 button {
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    font-size: 14px;
+}
+div.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.caculator{
+    text-align: center;
+    width: 240px;
+}
+div.caculator button{
+    width: 50px;
+    height: 50px;
+    margin: 4px 3px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    /* background-color: ; */
+}
+div.caculator button:active{
+    background-color:rgb(117, 105, 104) ;
+}
+.color-yellow {
+    background-color: #ffc803;
+    font-weight: bold;
+}
+.flexbox input{
+    width: 223px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+div.game {
+    text-align: center;
+}
+div.game button{
+    width: 60px; 
+    height: 60px;
+    margin: 0 10px;
+}
+div.game button i{
+    font-size: 18px;
+    color: rgb(242, 0, 255);
+}
+.sinhvien{
+    text-align: center;
+}
+.sinhvien button{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 37px; 
+    background-color: aliceblue;
+    margin: 5px 4px;
+    font-size: 14px;
+}
+.products {
+    text-align: center;
+}
+.products button {
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 37px; 
+    background-color: rgb(240, 248, 255);
+    margin: 5px 4px;
+    font-size: 14px;
+}
+.blacks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 20px 7px 10px 7px;
+    background-color: black;
+}
+.blacks input{
+    color: black;
+    font-size: 15px;
+    padding: 0 3px;
+}
+.color-red {
+    background-color: rgb(255, 34, 0);
+}

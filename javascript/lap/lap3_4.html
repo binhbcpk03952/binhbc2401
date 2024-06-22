@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lap3_4.css">
+    <title>lap3_4</title>
+</head>
+<body>
+    <!-- Bài 1-->
+    <h2>Phép toán số học</h2>
+    <div class="bai-1">
+        <button onclick="phepToan()">Phep tinh</button>
+
+    </div>
+
+    <!-- Bài 2 -->
+    <h2>Búa bao kéo</h2>
+    <div class="game">
+        <!-- <button onclick="buaBaoKeo()">Lựa chọn của máy</button> -->
+        <button onclick="suLuaChon(0)">
+            <i class="fa-solid fa-hammer"></i>
+        </button>
+        <button onclick="suLuaChon(1)">
+            <i class="fa-solid fa-hand"></i>
+        </button>
+        <button onclick="suLuaChon(2)">
+            <i class="fa-solid fa-scissors"></i>
+        </button>
+    </div>
+     
+    <!-- Quản lí sinh viên-->
+    <h2>Quản lí sinh viên</h2>
+    <div class="sinhvien">
+        <button onclick="themSinhVien()">Thêm sinh viên</button>
+        <button onclick="xemSV()">Xem danh sách sinh viên</button>
+        <button onclick="thongTin()">Tìm sinh viên</button>
+        <button onclick="xoaSinhVien()">Xóa sinh viên</button>
+        <button onclick="suaDiem()">Sửa điểm</button>
+        <button onclick="traoBang()">Trao bằng khen</button>
+        <button onclick="danhSach()">Danh sách sinh viên có bằng khen</button>
+        <div id="openWindow">
+        </div>
+
+    </div>
+
+    <!--Danh mục sản phẩm-->
+    <h2>Quản lí danh mục sản phẩm</h2>
+    <div class="products">
+        <button onclick="themSanPham()">Thêm sản phẩm</button>
+        <button onclick="xemDS()">Xem danh sách sản phẩm</button>
+        <button onclick="timKiemSP()">Tìm kiếm sản phẩm</button>
+        <button onclick="xoaSP()">Xóa sản phẩm</button>
+        <button onclick="banSP()">Bán sản phẩm</button>
+        <button onclick="nhapSP()">Nhập thêm sản phẩm</button>
+        <button onclick="tonKho()">Kiểm tra tồn kho</button>
+        <div id="window-product">
+    
+        </div>
+
+    </div>
+
+    <h2>Caculator</h2>
+    <div class="flexbox">
+        <div class="blacks">
+            <input type="text" name="" id="display" disabled>
+            <div class="caculator">
+    
+                <button onclick="toan_hang(7)">7</button>
+                <button onclick="toan_hang(8)">8</button>
+                <button onclick="toan_hang(9)">9</button>
+                <button onclick="toan_tu('+')" class="color-yellow">+</button>
+                
+                <button onclick="toan_hang(4)">4</button>
+                <button onclick="toan_hang(5)">5</button>
+                <button onclick="toan_hang(6)">6</button>
+                <button onclick="toan_tu('-')" class="color-yellow">-</button>
+                
+                <button onclick="toan_hang(1)">1</button>
+                <button onclick="toan_hang(2)">2</button>
+                <button onclick="toan_hang(3)">3</button>
+                <button onclick="toan_tu('*')" class="color-yellow">*</button>
+               
+                <button onclick="toan_hang(0)">0</button>
+                <button onclick="lam_lai()" class="color-red">C</button>
+                <button onclick="thuc_hien()" class="color-yellow">=</button>
+                <button onclick="toan_tu('/')" class="color-yellow">/</button>
+            
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script src="lap3_4.js"></script>
+    <script src="lap3_4--products.js"></script>
+    <!-- <script src="caculator.js"></script> -->
+    <script src="/cacu.js"></script>
+    <script src="https://kit.fontawesome.com/005113d30b.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

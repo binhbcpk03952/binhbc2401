@@ -1,0 +1,29 @@
+div.list ol{
+    list-style-type: none;
+    display: flex;
+    margin-left: 43px;
+}
+div.list{
+    height: 40px;
+    border-bottom: #434343 solid 1px;
+    padding: 8px 0;
+}
+div.list ol a{
+    color: #111;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.list_child--bold{
+    font-weight: 600;
+    color: #333333;
+}
+main{
+    background-color: #fff;
+    padding: 1% 6.3%;
+}
+main h2{
+    margin-left: 0;
+}
+p.text_bold{
+    font-weight: 600;
+}

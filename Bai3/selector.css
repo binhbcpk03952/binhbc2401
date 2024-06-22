@@ -1,0 +1,95 @@
+body {
+    font-size: 100%;   /* theo font size mac dinh cua trinh duyet (16px) */
+    
+}
+/**/
+h1{
+   font-family: Arial, Helvetica, sans-serif;  /*font chữ*/
+   font-size:  2.1rem;     /*cỡ chữ*/
+   color: green;
+}
+h1:hover{
+    text-decoration: underline;
+
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;  /*font chữ*/
+    font-size:  1.5rem;     /*cỡ chữ*/
+    color: rgb(45, 136, 234);
+}
+a{
+    line-height: 1.5;
+    text-decoration: 0;
+}
+
+
+div.link>a:hover{
+    color: rgb(255,0,0);
+    text-decoration: underline;
+}
+div.link a.link_1:active{
+    color: green;
+}
+div.link a.link_3:active{
+    color:gray;
+}
+div.link span.link-span a.link_2:hover{
+    text-decoration: underline;
+}
+/* div.link span.link-span a.link_2:active{
+    color: orange;
+    text-decoration: 0; 
+}*/
+div.link> span>a:active{
+    color: orange;
+}
+div.effect a.link_4:active{
+    color: yellow;
+}
+p, a {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: rgb(12, 121, 140);
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.3rem;
+    border: none;
+    text-align: center;
+}
+img{
+    width: 300px;
+    max-width: 100%;
+}
+.boldText{
+    font-weight: bold;
+}
+.underlineText{
+    text-decoration: underline;
+}
+.growButton{
+    transition: all .2s ease-in-out;
+}
+.growButton:hover{
+    height: 50px;
+    width: 150px;
+    transform: scale(1.1)
+}
+.growButton_2:hover{
+    background-color: #FFFFFF;
+    border: green solid 2px;
+    color: #111;
+}
+div.effect button.growButton_2:active{
+    background-color: gray;
+    border: 0;
+}
+div.effect img:hover{
+    opacity: 0.4;
+}
+
+    

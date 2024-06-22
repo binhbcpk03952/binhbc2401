@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+
+.wrap{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(106, 155, 199);
+    border: 1px #aaa solid;
+    display: inline-block
+
+}   
+.box{
+    background-color: rgb(47, 202, 85);
+    border: 1px #3cf solid;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    text-align: center;
+    animation-name: animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation {
+    0%   {rotate: 90deg;}
+  25%  {rotate: 180deg;}
+  50%  {rotate: 270deg;}
+  100% {rotate: 360deg;}
+}

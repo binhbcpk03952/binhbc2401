@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bai1.css">
+        <title>Document</title>
+
+    </head>
+
+    <body>
+        <div class="card">
+            <img src="Pic/jeans3.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>Tailored Jeans</h1>
+            <p class="price">$19.99</p>
+            <label>Số lượng: </label>
+            <button class="qty-btn" onclick="plussQuantity(-1)">-</button>
+            <input type="text" name="quantity" value="1"
+                min="1" id="quantity" oninput="updateQuantityValue(this.value)">
+            <button class="qty-btn" onclick="plussQuantity(1)">+</button>
+
+            <p>Quần jean nữ có thiết kế tôn dáng phù hợp với vóc dáng của phụ nữ
+                Việt và được làm từ chất liệu cao cấp cùng công nghệ xử lý màu
+                tiên tiến
+            </p>
+            <div><button class="buy-button" onclick="buyProduct()">Mua
+                    hàng</button></div>
+        </div>
+
+        <h1>ĐƠN HÀNG</h1>
+        <div id="openWindow">
+
+        </div>
+
+        <h2>Game</h2>
+        <div class="flex-center">
+            <div class="lap5-bai3" id="openWindow2">
+                <h3>GAME ĐOÁN SỐ</h3>
+                <label for>Xin nhập số bí mật</label>
+                <input type="text" name id="game-number"> <br>
+                <button type="submit" onclick="kiemTraSo()">Xác nhận</button>
+                <p id="error"></p>
+            </div>
+        </div>
+        <div class="flex-center">
+            <div class="win-game">
+                <h3>Kết quả game đoán số</h3>
+                <img src="Pic/winner.webp" alt>
+                <h4>WIN GAME</h4>
+                <button onclick="reLoadGame()">Chơi lại</button>
+            </div>
+        </div>
+        <div class="flex-center">
+            <div class="loss-game">
+                <h3>Kết quả game đoán số</h3>
+                <img
+                    src="Pic/pngtree-you-lose.png"
+                    alt>
+                <h4>LOSS GAME</h4>
+                <p></p>
+                <button onclick="reLoadGame()">Chơi lại</button>
+            </div>
+        </div>
+
+        <h2>Tic tac toe</h2>
+        <div class="tic-tac-toe">
+            <div id="tic-tac-toe">
+                <button class="btn" onclick="danhDau(0)"></button>
+                <button class="btn" onclick="danhDau(1)"></button>
+                <button class="btn" onclick="danhDau(2)"></button>
+                <button class="btn" onclick="danhDau(3)"></button>
+                <button class="btn" onclick="danhDau(4)"></button>
+                <button class="btn" onclick="danhDau(5)"></button>
+                <button class="btn" onclick="danhDau(6)"></button>
+                <button class="btn" onclick="danhDau(7)"></button>
+                <button class="btn" onclick="danhDau(8)"></button>
+            </div>
+            <div id="message">
+            </div>
+            <button id="restart" onclick="restartGame()">Chơi lại</button>
+        </div>
+
+        <script src="bai1.js"></script>
+    </body>
+
+</html>

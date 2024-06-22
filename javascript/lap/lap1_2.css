@@ -1,0 +1,21 @@
+body{
+    padding: 50px 100px;
+    font-family: sans-serif;
+   
+}
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+    color: rgb(0, 136, 255);
+}
+h2{
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+}
+button{
+    padding: 7px;
+    background-color: rgba(151, 179, 255, 0);
+    border: 1px solid black;
+    font-size: 14px;
+    border-radius: 5px;
+}

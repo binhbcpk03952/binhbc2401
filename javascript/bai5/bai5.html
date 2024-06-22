@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6a94be23f4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bai5.css">
+    <link rel="stylesheet" href="giohang.css">
+    <title>Bài 5 - Thêm SP & Giỏ Hàng</title>
+</head>
+
+<body onload="refresh()">
+    <h1>SẢN PHẨM</h1>
+    <button id="btn-chucnang-themsp">Thêm sản phẩm</button>
+    <div id="them-sp">
+        <label>Hình sản phẩm: </label>
+        <input class="themsp-input" type="text" id="themsp-hinh">
+        <br>
+        <label>Tên sản phẩm: </label> 
+        <input class="themsp-input" type="text" id="themsp-ten">
+        <br>
+        <label>Giá sản phẩm: </label> 
+        <input class="themsp-input" type="text" id="themsp-gia">
+        <br>
+        <label>Số lượng tồn kho: </label> 
+        <input class="themsp-input" type="text" id="themsp-soluong">
+        <br>
+		<button id="btn-themsp">Thêm</button>
+    </div>
+    <h1>DANH SÁCH SẢN PHẨM</h1>
+    <div class="san-pham-container" id="hien-thi-sp">
+		<!-- Các sản phẩm trong danh sách hiển thị ở đây -->
+		
+    </div>
+
+    <!-- GIỎ HÀNG -->
+    <div class="giohang">
+        <div class="container" id="conten">
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <!-- <span class="cart-quantity cart-header cart-column">Số Lượng</span> -->
+                            <span class="cart-tong cart-header cart-column">Tổng</span>
+                            <span class="cart-chuc-nang cart-header cart-column">Chức năng</span>
+                        </div>
+                        <div class="cart-items">
+                            <div class="productInfo" id="sp-gio-hang">
+                                <!-- Các sản phẩm thêm vào giỏ hàng hiển thị ở đây -->
+                                <div class=carts-shop>
+                                    <div class="cart-item cart-column">
+                                        <img class="cart-item-image"
+                                            src="https://imgs.vietnamnet.vn/Images/2017/09/10/13/20170910134007-quan-jeans-nu-1.jpg">
+                                        <span class="cart-item-title">Tailored Jeans</span>
+                                    </div>
+                                    <span class="cart-price cart-column">$19.99</span>
+                                    <div class="cart-quantity cart-column">
+                                        <input class="cart-quantity-input" type="number" min="1" value="1"
+                                            onchange="thayDoiSoLuong(viTriSua, this.value)">
+                                    </div>
+                                    <span class="cart-price-tong cart-column">$19.99</span>
+                                    <div class="cart-column-xoa">
+                                        <button class="btn btn-danger cart-column-xoa" onclick="xoaSPMua(viTriXoa)">Xóa <i
+                                                    class="fa-solid fa-trash-can"></i></a></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span style="font-size: 20px; margin-right: 20px; color: rgb(255, 0, 0); font-weight: 500
+                                    ;" class="cart-total-price" id="Tong-tien"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="mua" type="button"><a href="#popup3">
+                    Mua
+                </a></button>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <scr src="jquery-3.6.3.min.js"></scr ipt>
+    <script src="bai5.js"></script>
+</body>
+
+</html>

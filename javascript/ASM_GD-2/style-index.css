@@ -1,0 +1,449 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: F3F0F0;
+    font-family: sans-serif ;
+}
+.header1{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 6%;
+    background-color: white ;
+    
+}
+.header_login{
+    text-decoration: none;
+    /* font-weight: 600; */
+}
+.header_login--user{
+    margin-left: 15px;
+}
+.header_login a{
+    color: #111111;
+    font-size: 1.1rem;
+    /* border: #111111 solid 1px; */
+    border-radius: 4px;
+    padding: 9px 7px;
+    background-color: #faffb5;
+    transition: 100ms ease-in;
+    text-decoration: none;
+}
+.header_login a i {
+    color: #559ba7;
+    margin-right: 3px;
+    font-size: 19px;
+}
+
+.header_login a:hover{
+    color:#828282;
+}
+h1{
+    font-family: Time New Roman;
+    font-weight: bold;
+    font-size: 30px;
+    color:#111111;
+   
+}
+@media (max-width: 600px) {
+    .header1 h1{
+      font-size: 20px;
+     
+    }
+  }
+  @media (max-width: 600px) {
+    .header_login a span{
+      font-size: 15px;
+    }
+  }
+   nav{
+    /* background:#666666 ; */
+    list-style-type: none;
+    text-align: center;
+    width: 50%;
+    max-width: 100%;
+    margin-left: 100px;
+}
+nav i {
+    color: #559ba7;
+    margin-right: 3px;
+    font-size: 19px;
+}
+.menu li{
+    color: white;
+    display: inline-block;
+    /* width: 100px; */
+    margin: 0 13px;
+    height: 40px;
+    line-height: 40px;
+}
+nav li a{
+    color: black;
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: rgb(63, 20, 20);
+    text-decoration: underline #ffffff solid;
+}
+li.menu2-dropdown{
+    display: inline-block;
+    position: relative;
+}
+.menu2-dropdown_content{
+    min-width: 220px;
+    padding: 5px;
+    background-color: #ffffff;
+    /* margin-left: 28px; */
+    text-align: left;
+    position: absolute;
+    display: none;    
+    z-index: 1;
+}
+.menu2-dropdown_content.show {
+    display: block;
+}
+
+.menu2-dropdown_content a{
+    color:rgb(87, 87, 87);
+}
+.menu2-dropdown_content a:hover{
+    color:rgb(0, 0, 0);
+}
+/* .menu2-dropdown:hover .menu2-dropdown_content{
+    display: block;
+} */
+
+* {box-sizing: border-box}
+.banner .mySlides1 img{
+    width: 100%;
+    margin-top: 5px;
+    height: 550px;
+}
+.mySlides1 {
+    display: none;
+}
+img {
+    vertical-align: middle;
+}
+
+
+.banner {
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.current-slide {
+    display: block;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {   
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+main{
+    padding: 30px 0;
+    background-color:#F3F0F0;
+    
+}
+.products{
+    margin-left: 7px;
+    /* text-align: center; */
+}
+.product{
+    width: 330px;
+    background-color: #ffffff;
+    margin: 20px;
+    padding-bottom: 20px;
+    max-width: 330px;
+    position: relative;
+   
+}
+.product a{
+    text-decoration: none;
+}
+.product_img{
+    width: 300px;
+    height: 226px;
+    margin-bottom: px;
+    margin-left: 12px;
+}
+.product_name{
+    text-decoration: none;
+    color: #111111;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.product_price{
+    font-weight: bold;
+    color: #111111;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.image_1{
+    background-image: url('photo/asics-sky-elite-trang-cam.webp');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_1:hover{
+    background-image: url('photo/ASICS-Sky-Elite-FF-MT-2-mens-volleyball-shoes-White-Deep-Ocean-1051A065.103-4.jpg');
+    background-size: 300px 226px;
+}
+.image_2{
+    background-image: url('photo/asics-nova-flow.webp');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_2:hover{
+    background-image: url('photo/nova-flow.jpg');
+    background-size: 300px 226px;
+}
+.image_3{
+    background-image: url('photo/asics-v-swift-ff-mt-3.webp');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_3:hover{
+    background-image: url('photo/v-swift-mt-3-do.jpg');
+    background-size: 300px 226px;
+}
+.image_4{
+   background-image: url('photo/mizuno-wave-lightning-z6.jpg');
+   background-size: 300px 226px;
+   transition: 0.3s ease-in;
+}
+.image_4:hover{
+    background-image: url('photo/mizuno-z6.jpg');
+    background-size: 300px 226px;
+}
+.image_5{
+    background-image: url('photo/mizuno-wave-momentum-mid-2-2.jpg');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_5:hover{
+    background-image: url('photo/mizuno-momentum-2.jpg');
+    background-size: 300px 226px;
+}
+.image_6{
+    background-image: url('photo/mizuno-wave-lightning-z7.jpg');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_6:hover{
+    background-image: url('photo/mizuno-z7.jpg');
+    background-size: 300px 226px;
+}
+.div_img{
+    margin-left: 2px;
+}
+.img_clothes{
+    width: 500px;
+    max-width: 100%;
+    margin: 20px 15px;
+}
+.img_clothes a img{
+    width: 450px;
+    max-width: 100%;
+    height: 450px;
+    max-height: 100%;
+}
+main h2{
+    margin-left: 9%;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+footer{
+    background-color: #666666;
+    color: #ffffff;
+    padding: 30px 0;
+}
+.col-md-4 h3{
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+.footer_support ul{
+    list-style-type: none;
+    padding: 0;
+    line-height: 2.4;
+    margin-top: -5px;
+}
+.footer_support ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer_support ul li a:hover{
+    color: #dbdbdb;
+    text-decoration: underline;
+}
+.footer_place{
+    margin-top: 25px;
+}
+.col-md-4 {
+    width: 320px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.container .row {
+    width: 89.4%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.envent-mouse i{
+    margin-right: 7px;
+}
+.envent-mouse {
+    /* display: none; */
+    position: absolute;
+    top: 210px;
+    width: 330px;
+    /* height: 50px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    color: #d26a1a;
+    text-align: center;
+    height: 35px;
+    padding: 9px 0;
+    transition: all 0.3s;
+}
+.envent-mouse {
+    display: none;
+}
+.heart-position {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #d26a1a;
+    padding: 4px;
+    border-radius: 50%;
+}
+.fa-heart {
+    font-size: 16px;
+    /* margin-top: 2px; */
+}
+.product_dad {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.successful {
+    position: relative;
+}
+.successful .fa-regular{
+    font-size: 22px;
+    color: #559ba7;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px 7px;
+}
+#name-user {
+    width: 70px;
+    color: #666666;
+    font-size: 15.5 px;
+    /* text-decoration: none; */
+    margin-right: 4px;
+}
+.dropdown {
+    text-decoration: none;
+}
+.dropdown-content{
+    display: none;
+    background-color: #faffb5;
+    width: 150px;
+    position: absolute;
+    right: 0;
+    padding: 0px 5px 0;
+    z-index: 1;
+    text-align: end;
+}
+ .dropdown-content.active {
+    display: block;
+}
+.dropdown-content li{
+    list-style-type: none;
+}
+.dropdown-content li button{
+    font-size: 15.5px;
+    height: 35px;
+    border: none;
+    background-color: #faffb5;
+    color: black;
+}
+.dropdown-content li button a {
+    text-decoration: none;
+    color: #111111;
+}
+.dropdown-content li button a:hover {
+    color: #559ba7;
+}

@@ -1,0 +1,18 @@
+img{
+    max-width: 100%;
+}
+.doan-1 img{
+    width: 400px;
+}
+div.doan-2{
+    background-image: url(Pic/flowers-276014__340.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+div.demo{
+    background-image: url(Pic/flowers-276014__340.jpg);
+    background-size: cover;
+}
+a.card4 img{
+    width: 300px;
+}

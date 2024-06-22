@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+form{
+    background-color: rgb(253, 159, 151);
+    width: 400px;
+    line-height: 2.5;
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+h1{
+    font-size: 1.3rem;
+    margin-left: 37px;
+}
+.name{
+    margin-left: 20px;
+    height: 30px;
+    text-align: center;
+}
+.email{
+    margin-left: 48px;
+    height: 30px;
+}
+.date{
+    margin-left: 17px;
+}
+.sex{
+    margin-left: 30px;
+}
+.interest{
+    margin-left: 31px;
+}
+#blood{
+    margin-left: 15px;
+}
+.submit{
+    margin-left: 150px;
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #33942b;
+}

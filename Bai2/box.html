@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồng Hồ Bấm Giờ</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    }
+    body{
+        /* background-image: url("https://c4.wallpaperflare.com/wallpaper/133/969/139/artwork-nature-landscape-fantasy-art-wallpaper-preview.jpg"); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    h1 {
+    text-align: center;
+    background: linear-gradient(360deg, #960fb8, #ffc60b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    }
+    .full-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .glass{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #fff;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(3px);
+        border-radius: 30px;
+        width: 550px;
+        height: 300px;
+    }
+    .times {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        list-style-type: none;
+        padding: 0;
+    }
+    .times li {
+        color: #c8ff47;
+        font-size: 50px;
+        margin: 0 10px;
+    }
+    .option{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+    button{
+        padding: 7px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        background: linear-gradient(0deg, #960fb8, #ffc60b);
+        outline: none;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in;
+    }
+    button:hover{
+        background: linear-gradient(0deg, #ffc60b, #960fb8);
+    }
+</style>
+<body>
+    <div class="full-content">
+        <div class="glass">
+            <div class="content">
+                <h1> <span> &lt; </span> TAT CODER <span>/&gt</span> </h1>
+                <h1>Đồng Hồ Đếm Giờ !</h1>
+                <ul class="times">
+                    <li>00</li>
+                    <li>:</li>
+                    <li>00</li>
+                    <li>:</li>
+                    <li>00</li>
+                </ul>
+            </div>
+            <div class="option">
+                    <button id="start">Start</button>
+                    <button id="stop">Stop</button>
+                    <button id="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+   <script>
+    let seconds = 0;
+    let minutes = 0;
+    let hours = 0;
+    let intervalId=null;
+        const start = document.getElementById('start');
+        const secondsElement = document.querySelector('.times li:nth-child(5)');
+        const minutesElement = document.querySelector('.times li:nth-child(3)');
+        const hoursElement = document.querySelector('.times li:nth-child(1)');
+
+        start.addEventListener('click', () => {
+            if (intervalId) {
+                return;
+        }
+        intervalId=setInterval(()=>{
+                seconds++;
+                if(seconds === 60){
+                    minutes++;
+                    seconds = 0;
+                    minutesElement.textContent = minutes < 10 ? `0${minutes}` : minutes;
+                }
+                if(minutes === 60){
+                    hours++;
+                    minutes = 0;
+                    hoursElement.textContent = hours < 10 ? `0${hours}` : hours;
+                }
+                secondsElement.textContent = seconds < 10 ? `0${seconds}` : seconds;
+            },1000)
+        });
+
+        const stop = document.getElementById('stop');
+            stop.addEventListener('click', () => {
+                if (intervalId) {
+                    clearInterval(intervalId);
+                    intervalId = null;
+                }
+            });
+        const reset = document.getElementById('reset');
+            reset.addEventListener('click', ()  =>{
+                if (intervalId) {
+                    clearInterval(intervalId);
+                    intervalId = null;
+                }
+                seconds = 0;
+                minutes = 0;
+                hours = 0;
+                secondsElement.textContent = '00';
+                minutesElement.textContent = '00';
+                hoursElement.textContent = '00';
+            
+            })
+
+   </script>
+</body>
+</html>

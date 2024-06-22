@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .anh_san--pham{
+                width: 300px; 
+                border-radius: 15px;
+            }
+            #gio-hang {
+                display: flex;
+                justify-content: start;
+            }
+            /* #gio-hang p{
+                margin: 0 10px;
+            } */
+        </style>
+        <title>HTML DOM</title>
+    </head>
+    <body>
+        <h1>Phần 1: Thêm thành phần vào HTML</h1>
+        <p>Hiển thị ảnh sau đoạn văn này khi nhấn nút</p>
+        <div id="divHinh">
+            
+        </div>
+
+        <button onclick="hienThiAnh()">Hiển thị ảnh</button>
+        <button onclick="dinhDangHinh()">Dình dạng hình</button>
+        <button onclick="themGioHang()">Thêm giỏ hàng</button>
+
+        
+		<h1>GIỎ HÀNG</h1>
+        <div id="gio-hang">		
+        </div>
+		
+		<script src="dom2.js"></script>
+    </body>
+</html>

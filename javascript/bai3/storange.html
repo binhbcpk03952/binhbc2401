@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="key" name="" id="">
+    <button onclick="kiemTra()">Kiem tra</button>
+    <p id="ketQua"></p>
+    <script>
+        localStorage.setItem("ten", "Nguyen Van A")
+        localStorage.setItem("tuoi", 16)
+        function kiemTra() {
+            let ketQua = localStorage.getItem(document.getElementById("key"))
+            document.getElementById("ketQua").innerHTML = ketQua
+        }
+    </script>
+</body>
+</html>

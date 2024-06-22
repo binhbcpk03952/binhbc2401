@@ -1,0 +1,88 @@
+.image_1{
+    background-image: url('photo/mizuno-wave-lightning-z6.jpg');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_1:hover{
+    background-image: url('photo/mizuno-z6.jpg');
+    background-size: 300px 226px;
+}
+.image_2{
+    background-image: url('photo/mizuno-wave-lightning-z7.jpg');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_2:hover{
+    background-image: url('photo/mizuno-z7.jpg');
+    background-size: 300px 226px;
+}
+.image_3{
+    background-image: url('photo/mizuno-wave-momentum-mid-2-2.jpg');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_3:hover{
+    background-image: url('photo/mizuno-momentum-2.jpg');
+    background-size: 300px 226px;
+}
+.image_4{
+   background-image: url('photo/momentum-2-xanh-hover.jpg');
+   background-size: 300px 226px;
+   transition: 0.3s ease-in;
+}
+.image_4:hover{
+    background-image: url('photo/momentum-2-xanh.jpg');
+    background-size: 300px 226px;
+}
+.image_5{
+    background-image: url('photo/momentum-2-trang.jpg');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_5:hover{
+    background-image: url('photo/momentum-2-trang-hover.jpg');
+    background-size: 300px 226px;
+}
+.image_6{
+    background-image: url('photo/mizuno-claw.jpg');
+    background-size: 300px 226px;
+    transition: 0.3s ease-in;
+}
+.image_6:hover{
+    background-image: url('photo/mizuno-claw-hover.jpg');
+    background-size: 300px 226px;
+}
+main h1{
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-left: 10.8%;
+}
+div.list ol{
+    list-style-type: none;
+    display: flex;
+    margin-left: 43px;
+}
+div.list{
+    height: 35px;
+    border-bottom: #434343 solid 1px;
+    padding: 8px 0;
+    font-size: 14px;
+    width: 100%;
+    max-width: 100%;
+}
+div.list ol a{
+    color: #111;
+    text-decoration: none;
+    padding: 0 10px;
+}
+div.list ol.list_child a.list_child--bold{
+    font-weight: 600;
+    color: #777777;
+}
+main{
+    padding-bottom: 60px;
+}
+.banner_product img{
+    width: 100%;
+    max-width: 100%;
+}

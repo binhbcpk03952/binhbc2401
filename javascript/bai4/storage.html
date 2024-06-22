@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+
+    <label for="">Nhập key để kiểm tra giá trị</label>
+    <input type="text" id="key">
+    <button onclick="kiemTra()">Kiểm tra</button>
+    <div id="ketQua">
+    </div>
+
+    <script>
+        //Lưu vào local storage
+        localStorage.setItem("ten",JSON.stringify("Nguyễn Văn A"))
+        localStorage.setItem("tuoi",JSON.stringify(16))
+        function kiemTra(){
+            //đọc dữ liệu từ local storage
+            let ketQuaTho = localStorage.getItem(document.getElementById("key").value)
+            let ketQua = JSON.parse(ketQuaTho);
+            document.getElementById("ketQua").innerHTML = ketQua
+            console.log(typeof ketQua)
+        }
+    </script>
+</body>
+</html>
