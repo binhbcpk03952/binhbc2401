@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Waggy- </title>
+        <title>Waggy - Free eCommerce Pet Shop HTML Website Template</title>
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
             rel="stylesheet">
@@ -53,57 +53,89 @@
             </div>
             <div class="container-fluid">
                 <hr class="m-0">
-            </div>
+            </div>  
             <div class="container">
-                <nav class="navigation">
-                    <div class="nav-flex-center">
-                        <select class="select">
-                            <option value>Shop by Category</option>
-                            <option value>Clothes</option>
-                            <option value>Food</option>
-                            <option value>Toy</option>
-                        </select>
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <div class="container-fluid flex-responsive">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                            <button class="btn toogler-nav text-align-center" onclick="dlNone()"><i class="fa-solid fa-xmark"></i></button>
+                            <div class="nav-flex-center select-dad">
+                                <select class="form-select">
+                                    <option value="">Shop by Category</option>
+                                    <option value="clothes">Clothes</option>
+                                    <option value="food">Food</option>
+                                    <option value="toy">Toy</option>
+                                </select>
+                            </div>
+                            <div class="nav-flex-center menu-dad">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                    <li class="nav-item">
+                                        <a class="nav-link link-regular color-in" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle link-regular" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">About Us<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="shop.html">Shop<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Single Product<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="cart.html">Cart<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="wishlist.html">Wishlist<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Checkout<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="blog.html">Blog<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Single Post<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="contact.html">Contact<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">FADs<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="account.html">Account<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Thank you<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Error 404<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Style<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link link-regular" href="shop.html">Shop</a></li>
+                                    <li class="nav-item"><a class="nav-link link-regular" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link link-regular" href="contact.html">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link link-regular" href="#">Other</a></li>
+                                    <li class="nav-item"><a class="nav-link link-bold" href="cart.html">GET PRO</a></li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="item-end nav-flex-center">
+                            <span id="name-account" class="px-1 badge bg-secondary-subtle text-dark fs-6"></span>
+                            <ul class="navbar-nav d-flex flex-row">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="account.html">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="wishlist.html">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cart.html">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="nav-flex-center">
-                        <ul class="header-menu">
-                            <li><a href="index.html" class="link-regular color-in">Home</a></li>
-                            <li><a href="#" class="link-regular">Pages</a></li>
-                            <li><a href="#" class="link-regular">Shop</a></li>
-                            <li><a href="blog.html" class="link-regular">Blog</a></li>
-                            <li><a href="contact.html"
-                                    class="link-regular">Contact</a></li>
-                            <li><a href="#" class="link-regular">Other</a></li>
-                            <li><a href="#" class="link-bold">GET PRO</a></li>
-                        </ul>
-
-                    </div>
-
-                    <div class="item-end nav-flex-center">
-                        <ul>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-user"></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a></li>
-                        </ul>
-                    </div>
-                </nav>
+                </nav>                          
             </div>
         </header>
         <section id="banner-index">
             <div class="container slider">
                 <div class="slides">
                     <div class="row slide">
-                        <div class="col-sm-5">
+                        <div class="col-sm-5 mt-5">
                             <img class="banner-img"
                                 src="https://demo.templatesjungle.com/waggy/images/banner-img.png"
                                 alt>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-7 mb-5">
                             <div class="banner_content--start">
                                 SAVE 10 - 20 % OFF
                             </div>
@@ -119,12 +151,12 @@
                     </div>
                 
                     <div class="row slide">
-                        <div class="col-sm-5">
+                        <div class="col-sm-5 mt-5">
                             <img class="banner-img"
                                 src="https://demo.templatesjungle.com/waggy/images//banner-img3.png"
                                 alt>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-7 mb-5">
                             <div class="banner_content--start">
                                 SAVE 10 - 20 % OFF
                             </div>
@@ -140,12 +172,12 @@
                     </div>
                 
                     <div class="row slide">
-                        <div class="col-sm-5">
+                        <div class="col-sm-5 mt-5">
                             <img class="banner-img"
                                 src="https://demo.templatesjungle.com/waggy/images/banner-img4.png"
                                 alt>
                         </div>
-                        <div class="col-sm-7">
+                        <div class="col-sm-7 mb-5">
                             <div class="banner_content--start">
                                 SAVE 10 - 20 % OFF
                             </div>
@@ -247,10 +279,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -276,10 +310,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -305,10 +341,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -334,10 +372,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -386,10 +426,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -415,10 +457,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -444,10 +488,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -473,10 +519,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -502,10 +550,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -531,10 +581,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -560,10 +612,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -589,10 +643,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -632,81 +688,87 @@
             <div class="container slider-text-child slider">
                 <div class="slides">
                     <div class="row slide">
-                        <div class="positon-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14rem"
-                                height="14rem" viewBox="0 0 24 24"><path
-                                    fill="currentColor"
-                                    d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 
-                                    1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 
-                                    3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179m10 0C13.553 
-                                    16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 
-                                    4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5
-                                     0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179"></path>
-                            </svg>
-                        </div>
-                        <!-- icon-->
-                        <div class="slider-flex-center">
-                            <p class="text-large">
-                                At the core of our practice is the idea that cities are
-                                the
-                                incubators of our
-                                greatest achievements, and the best hope for a
-                                sustainable
-                                future.
-                                <span class="text-blacks">- Joshima Lin</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row slide">
-                        <div class="positon-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14rem"
-                                height="14rem" viewBox="0 0 24 24"><path
-                                    fill="currentColor"
-                                    d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 
-                                    1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 
-                                    3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179m10 0C13.553 
-                                    16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 
-                                    4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5
-                                     0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179"></path>
-                            </svg>
-                        </div>
-                        <!-- icon-->
-                        <div class="slider-flex-center">
-                            <p class="text-large">
-                                At the core of our practice is the idea that cities are
-                                the
-                                incubators of our
-                                greatest achievements, and the best hope for a
-                                sustainable
-                                future.
-                                <span class="text-blacks">- Joshima Lin</span>
-                            </p>
+                        <div class="col-md-12">
+                            <div class="positon-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11rem"
+                                    height="11rem" viewBox="0 0 24 24"><path
+                                        fill="currentColor"
+                                        d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 
+                                        1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 
+                                        3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179m10 0C13.553 
+                                        16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 
+                                        4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5
+                                         0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179"></path>
+                                </svg>
+                            </div>
+                            <!-- icon-->
+                            <div class="slider-flex-center">
+                                <p class="text-large">
+                                    At the core of our practice is the idea that cities are
+                                    the
+                                    incubators of our
+                                    greatest achievements, and the best hope for a
+                                    sustainable
+                                    future.
+                                    <span class="text-blacks">- Joshima Lin</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                     <div class="row slide">
-                        <div class="positon-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14rem"
-                                height="14rem" viewBox="0 0 24 24"><path
-                                    fill="currentColor"
-                                    d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 
-                                    1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 
-                                    3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179m10 0C13.553 
-                                    16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 
-                                    4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5
-                                     0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179"></path>
-                            </svg>
+                        <div class="col-md-12">
+                            <div class="positon-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11rem"
+                                    height="11rem" viewBox="0 0 24 24"><path
+                                        fill="currentColor"
+                                        d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 
+                                        1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 
+                                        3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179m10 0C13.553 
+                                        16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 
+                                        4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5
+                                         0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179"></path>
+                                </svg>
+                            </div>
+                            <!-- icon-->
+                            <div class="slider-flex-center">
+                                <p class="text-large">
+                                    At the core of our practice is the idea that cities are
+                                    the
+                                    incubators of our
+                                    greatest achievements, and the best hope for a
+                                    sustainable
+                                    future.
+                                    <span class="text-blacks">- Joshima Lin</span>
+                                </p>
+                            </div>
                         </div>
-                        <!-- icon-->
-                        <div class="slider-flex-center">
-                            <p class="text-large">
-                                At the core of our practice is the idea that cities are
-                                the
-                                incubators of our
-                                greatest achievements, and the best hope for a
-                                sustainable
-                                future.
-                                <span class="text-blacks">- Joshima Lin</span>
-                            </p>
+                    </div>
+                    <div class="row slide">
+                        <div class="col-md-12">
+                            <div class="positon-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11rem"
+                                    height="1rem" viewBox="0 0 24 24"><path
+                                        fill="currentColor"
+                                        d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 
+                                        1.378c-3.335 1.804-3.987 4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 
+                                        3.226 1.648 3.226 3.489a3.5 3.5 0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179m10 0C13.553 
+                                        16.227 13 15 13 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 
+                                        4.145-4.247 5.621c.537-.278 1.24-.375 1.929-.311c1.804.167 3.226 1.648 3.226 3.489a3.5 3.5
+                                         0 0 1-3.5 3.5a3.871 3.871 0 0 1-2.748-1.179"></path>
+                                </svg>
+                            </div>
+                            <!-- icon-->
+                            <div class="slider-flex-center">
+                                <p class="text-large">
+                                    At the core of our practice is the idea that cities are
+                                    the
+                                    incubators of our
+                                    greatest achievements, and the best hope for a
+                                    sustainable
+                                    future.
+                                    <span class="text-blacks">- Joshima Lin</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -754,10 +816,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -783,10 +847,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -812,10 +878,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -841,10 +909,12 @@
                                     5.0
                                 </span>
                                 <h3>$18.00</h3>
-                                <button class="add-tocart">ADD TO CART</button>
-                                <button class="add-favourites">
-                                    <i class="fa-solid fa-heart"></i>
-                                </button>
+                                <div class="d-flex align-items-center">
+                                    <button class="add-tocart">ADD TO CART</button>
+                                    <button class="add-favourites">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -854,28 +924,30 @@
 
         <section class="form-register">
             <div class="container">
-                <div class="flex-center">
-                    <h2>
-                        Get 20% Off On
-                        <span class="br-text-color">First Purchase</span>
-                    </h2>
-                    <form action>
-                        <div class="input">
-                            <input type="email" name id class="design-input"
-                                placeholder="Enter Your Email Address">
-                        </div>
-                        <div class="input">
-                            <input type="text" name id class="design-input"
-                                placeholder="Create Password">
-                        </div>
-                        <div class="input">
-                            <input type="text" name id class="design-input"
-                                placeholder="Repeat Password">
-                        </div>
-                        <div class="btn-register">
-                            <button>REGISTER IT NOW</button>
-                        </div>
-                    </form>
+                <div class="flex-center row ">
+                    <div class="col-md-6">
+                        <h2>
+                            Get 20% Off On
+                            <span class="br-text-color">First Purchase</span>
+                        </h2>
+                        <form action>
+                            <div class="input">
+                                <input type="email" name id class="design-input"
+                                    placeholder="Enter Your Email Address">
+                            </div>
+                            <div class="input">
+                                <input type="text" name id class="design-input"
+                                    placeholder="Create Password">
+                            </div>
+                            <div class="input">
+                                <input type="text" name id class="design-input"
+                                    placeholder="Repeat Password">
+                            </div>
+                            <div class="btn-register">
+                                <button>REGISTER IT NOW</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1034,7 +1106,7 @@
         <section class="insta">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-2 instagram-item">
+                    <div class="col instagram-item">
                         <div class="icon-hover">
                             <i data-lucide="instagram"></i>
                         </div>
@@ -1044,7 +1116,7 @@
                                 alt>
                         </a>
                     </div>
-                    <div class="col-md-2 instagram-item">
+                    <div class="col instagram-item">
                         <div class="icon-hover">
                             <i data-lucide="instagram"></i>
                         </div>
@@ -1054,7 +1126,7 @@
                                 alt>
                         </a>
                     </div>
-                    <div class="col-md-2 instagram-item">
+                    <div class="col instagram-item">
                         <div class="icon-hover">
                             <i data-lucide="instagram"></i>
                         </div>
@@ -1064,7 +1136,7 @@
                                 alt>
                         </a>
                     </div>
-                    <div class="col-md-2 instagram-item">
+                    <div class="col instagram-item">
                         <div class="icon-hover">
                             <i data-lucide="instagram"></i>
                         </div>
@@ -1074,7 +1146,7 @@
                                 alt>
                         </a>
                     </div>
-                    <div class="col-md-2 instagram-item">
+                    <div class="col instagram-item">
                         <div class="icon-hover">
                             <i data-lucide="instagram"></i>
                         </div>
@@ -1084,7 +1156,7 @@
                                 alt>
                         </a>
                     </div>
-                    <div class="col-md-2 instagram-item">
+                    <div class="col instagram-item">
                         <div class="icon-hover">
                             <i data-lucide="instagram"></i>
                         </div>

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Waggy - Free eCommerce Pet Shop HTML Website Template</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chilanka&amp;family=Montserrat:wght@300;400;500&amp;display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <link rel="stylesheet" href="css/account.css">
+    </head>
+    <body>
+        <header>
+            <div class="container ">
+                <div class="row heading_start">
+                    <div class="col-sm-3 logo-img">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img
+                                    src="https://demo.templatesjungle.com/waggy/images/logo.png"
+                                    alt>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-5 header-justify">
+                        <div class="search">
+                            <input type="text" class="inp-search"
+                                placeholder="Search For More Than 10,000 Products">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                    d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 
+                                    1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="flex-item header-justify">
+                            <div class="phone">
+                                <span class="flex-item-span">Phone</span>
+                                <h5>+980-34984089</h5>
+                            </div>
+                            <div class="email">
+                                <span class="flex-item-span">Email</span>
+                                <h5>Waggy@Gmail.Com</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <hr class="m-0">
+            </div>
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <div class="container-fluid flex-responsive">
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse bg-white"
+                            id="navbarSupportedContent">
+                            <button class="btn toogler-nav text-align-center"
+                                onclick="dlNone()"><i
+                                    class="fa-solid fa-xmark"></i></button>
+                            <div class="nav-flex-center select-dad">
+                                <select class="form-select">
+                                    <option value>Shop by Category</option>
+                                    <option value="clothes">Clothes</option>
+                                    <option value="food">Food</option>
+                                    <option value="toy">Toy</option>
+                                </select>
+                            </div>
+                            <div class="nav-flex-center menu-dad">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link link-regular"
+                                            href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a
+                                            class="nav-link dropdown-toggle link-regular"
+                                            href="#" id="navbarDropdown"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false">Pages</a>
+                                        <ul class="dropdown-menu"
+                                            aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item"
+                                                    href="#">About Us<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="shop.html">Shop<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Single Product<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="cart.html">Cart<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="wishlist.html">Wishlist<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Checkout<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="blog.html">Blog<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Single Post<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="contact.html">Contact<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">FADs<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="account.html">Account<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Thank you<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Error 404<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item"
+                                                    href="#">Style<span
+                                                        class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a
+                                            class="nav-link link-regular"
+                                            href="shop.html">Shop</a></li>
+                                    <li class="nav-item"><a
+                                            class="nav-link link-regular"
+                                            href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a
+                                            class="nav-link link-regular"
+                                            href="contact.html">Contact</a></li>
+                                    <li class="nav-item"><a
+                                            class="nav-link link-regular"
+                                            href="#">Other</a></li>
+                                    <li class="nav-item"><a
+                                            class="nav-link link-bold"
+                                            href="cart.html">GET PRO</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="item-end nav-flex-center">
+                            <span id="name-account"
+                                class="px-1 badge bg-secondary-subtle text-dark fs-6"></span>
+                            <ul class="navbar-nav d-flex flex-row">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="account.html">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="wishlist.html">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cart.html">
+                                        <i
+                                            class="fa-solid fa-cart-shopping"></i>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section class="banner-contact">
+            <div class="container banner-items">
+                <h2>Account</h2>
+                <nav class="breadcrumb">
+                    <a href="index.html"
+                        class="breadcrumb-item nav-link">Home</a>
+                    <a href="#" class="breadcrumb-item nav-link">Pages</a>
+                    <span class="breadcrumb-item active">Contact</span>
+                </nav>
+            </div>
+        </section>
+        <!-- main -->
+
+        <section id="form-register">
+            <div class="container">
+                <div class="nav-form">
+                    <button class="nav-login color-in" id="btn-login">LOG
+                        IN</button>
+                    <button class="nav-login" id="btn-register">SIGN IN</button>
+                </div>
+                <hr>
+                <div class="flex-center">
+                    <div class="all-form-login mt-5">
+                        <div class="form-log-in">
+                            <p class="form-title">Log-In With Social</p>
+                            <hr>
+                            <div class="log-in-with mt-3 mb-5">
+                                <button class="with-google">
+                                    <i class="fa-brands fa-google"></i>
+                                    GOOGLE
+                                </button>
+                                <button class="with-facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    FACEBOOK
+                                </button>
+                            </div>
+                            <p class="form-title">Log-In With Email</p>
+                            <hr class="mb-4">
+                            <form action id="formLogin">
+
+                                <input type="email" class="inp-value mt-3" name
+                                    id="inp-email"
+                                    placeholder="Enter Email Address">
+                                <p class="error5 text-danger"></p>
+                                <input type="password" class="inp-value mt-3"
+                                    name id="inp-pass"
+                                    placeholder="Enter Password">
+                                <p class="error6 text-danger"></p>
+                                <div class="remmember-forgot mt-5">
+                                    <div class="remmeber">
+                                        <input type="checkbox" name
+                                            id="remmeber-me">
+                                        <label for>Remember Me</label>
+                                    </div>
+                                    <div class="forgot-pass">
+                                        <a href="#">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <button class="login mt-4">LOGIN</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="all-form-register mt-5">
+                        <div class="form-sign-in">
+                            <p class="form-title">Sign-Up With Social</p>
+                            <hr class="mb-3">
+                            <div class="log-in-with">
+                                <button class="with-google">
+                                    <i class="fa-brands fa-google"></i>
+                                    GOOGLE
+                                </button>
+                                <button class="with-facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                    FACEBOOK
+                                </button>
+                            </div>
+                            <p class="form-title mt-5">Or Sign-Up With Email</p>
+                            <hr class="mb-4">
+                            <form action id="formRegister">
+                                <input type="text" class="inp-value mt-3" name
+                                    id="inp-name" placeholder="Your Full Name">
+                                <p class="error1 text-danger"></p>
+                                <input type="email" class="inp-value mt-3" name
+                                    id="inp-email-regis"
+                                    placeholder="Your Email Address">
+                                <p class="error2 text-danger"></p>
+                                <input type="password" class="inp-value mt-3"
+                                    name
+                                    id="inp-pass-regis"
+                                    placeholder="Set Your Password">
+                                <p class="error3 text-danger"></p>
+                                <input type="password" class="inp-value mt-3"
+                                    name
+                                    id="inp-passcofirm"
+                                    placeholder="Retype Your Password">
+                                <p class="error4 text-danger"></p>
+                                <div class="remmember-forgot mt-5">
+                                    <div class="remmeber">
+                                        <input type="checkbox" name
+                                            id="remmeber-me2">
+                                        <label for>Remember Me</label>
+                                    </div>
+                                    <div class="forgot-pass">
+                                        <a href="#">Forgot Password?</a>
+                                    </div>
+                                </div>
+                                <button class="login mt-4">SIGN UP</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section clas="d-block" id="show-users">
+            <div class="container">
+                <div class="flex-center">
+                    <div class="mt-5">
+                        <div class="form-sign-in">
+                            <h3>My Account</h3>
+                            <hr class="mb-4">
+                            <form action id="showRegister">
+                                <input type="text" class="inp-value mt-3" name
+                                    id="show-name" placeholder="Your Full Name"
+                                    disabled>
+                                <p class="error1 text-danger"></p>
+                                <input type="email" class="inp-value mt-3" name
+                                    id="inp-email-show"
+                                    placeholder="Your Email Address" disabled>
+                                <p class="error2 text-danger"></p>
+                            </form>
+                            <div
+                                class="d-flex justify-content-around align-items-center">
+                                <button
+                                    class="update-account btn btn-danger py-2 px-5">UPDATE</button>
+                                <button
+                                    class="logout-account btn btn-primary py-2 px-5">LOG
+                                    OUT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="end">
+            <h2>Drag / Drop</h2>
+            <div class="container DragDrop" style="width: 500px; height: 400px; background: rgb(215, 215, 247); padding-top: 20px;">
+                <h5>Kéo hình ảnh có chứa Oto để tiếp tục...</h5>
+                <div class="container" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div><br>
+
+                    <img width="150px" height="100px" src="pic/moto.jpg" id="drag1" draggable="true" ondragstart="drag(event)">
+                    <img width="150px" height="100px" src="pic/oto.jpg" id="drag2" draggable="true" ondragstart="drag(event)">
+                    <img width="150px" height="100px" src="pic/tau.jpg" id="drag3" draggable="true" ondragstart="drag(event)">
+            </div>
+        </section>
+            <script>
+                function allowDrop(ev){
+                    console.log("alloDrop");
+                    ev.preventDefault();
+                }
+            
+                function drag(ev){
+                    console.log("bat dau len");
+                    console.log(ev);
+                    ev.dataTransfer.setData("img", ev.target.id)
+                
+                }
+            
+                function drop(ev){
+                    console.log("phan tu duoc tha ao thanh cong");
+                    ev.preventDefault();
+                    var data = ev.dataTransfer.getData("img");
+                    ev.target.appendChild(document.getElementById(data));
+                }
+                
+            </script> -->
+        </section>
+
+        <!-- footer -->
+
+        <section class="insta">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-2 instagram-item">
+                        <div class="icon-hover">
+                            <i data-lucide="instagram"></i>
+                        </div>
+                        <a href="#">
+                            <img
+                                src="https://demo.templatesjungle.com/waggy/images/insta1.jpg"
+                                alt>
+                        </a>
+                    </div>
+                    <div class="col-md-2 instagram-item">
+                        <div class="icon-hover">
+                            <i data-lucide="instagram"></i>
+                        </div>
+                        <a href="#">
+                            <img
+                                src="https://demo.templatesjungle.com/waggy/images/insta2.jpg"
+                                alt>
+                        </a>
+                    </div>
+                    <div class="col-md-2 instagram-item">
+                        <div class="icon-hover">
+                            <i data-lucide="instagram"></i>
+                        </div>
+                        <a href="#">
+                            <img
+                                src="https://demo.templatesjungle.com/waggy/images/insta3.jpg"
+                                alt>
+                        </a>
+                    </div>
+                    <div class="col-md-2 instagram-item">
+                        <div class="icon-hover">
+                            <i data-lucide="instagram"></i>
+                        </div>
+                        <a href="#">
+                            <img
+                                src="https://demo.templatesjungle.com/waggy/images/insta4.jpg"
+                                alt>
+                        </a>
+                    </div>
+                    <div class="col-md-2 instagram-item">
+                        <div class="icon-hover">
+                            <i data-lucide="instagram"></i>
+                        </div>
+                        <a href="#">
+                            <img
+                                src="https://demo.templatesjungle.com/waggy/images/insta5.jpg"
+                                alt>
+                        </a>
+                    </div>
+                    <div class="col-md-2 instagram-item">
+                        <div class="icon-hover">
+                            <i data-lucide="instagram"></i>
+                        </div>
+                        <a href="#">
+                            <img
+                                src="https://demo.templatesjungle.com/waggy/images/insta6.jpg"
+                                alt>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-menu">
+                            <img
+                                src="https://demo.templatesjungle.com/waggy/images/logo.png"
+                                alt>
+                            <p class="card-text">Subscribe to our newsletter to
+                                get updates about
+                                our grand offers.</p>
+                            <div class="social-link">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i
+                                                class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i
+                                                class="fa-brands fa-pinterest"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i
+                                                class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-menu">
+                            <h3>Quick Links</h3>
+                            <ul class="footer-link">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Offer</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-menu">
+                            <h3>Help Center</h3>
+                            <ul class="footer-link">
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Payment</a></li>
+                                <li><a href="#">Return & Refunds</a></li>
+                                <li><a href="#">Checkout</a></li>
+                                <li><a href="#">Delivery Information</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="footer-menu">
+                            <h3>Our Newsletter</h3>
+                            <p class="card-text">Subscribe to our newsletter to
+                                get updates about
+                                our grand offers.</p>
+                            <div class="search-end">
+                                <form class="coment">
+                                    <input type="text"
+                                        placeholder="Enter Your Email Here">
+                                    <button>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            width="1em" height="1em"
+                                            viewBox="0 0 24 24"><path
+                                                fill="currentColor"
+                                                d="M20.891 2.006L20.997 2l.13.008l.09.016l.123.035l.107.046l.1.057l.09.067l.082.075l.052.059l.082.116l.052.096q.07.15.09.316l.005.106q0
+                                                 .113-.024.22l-.035.123l-6.532 18.077A1.55 1.55 0
+                                                  0 1 14 22.32a1.55 1.55 0 0 1-1.329-.747l-.065-.127l-3.352-6.702l-6.67-3.336a1.55 1.55 
+                                                  0 0 1-.898-1.259L1.68 10c0-.56.301-1.072.841-1.37l.14-.07l18.017-6.506l.106-.03l.108-.018z"></path></svg>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://kit.fontawesome.com/121f50087c.js"
+            crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/lucide@latest"></script>
+        <script>
+              lucide.createIcons();
+            </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/validateForm.js"></script>
+        <!-- <script src="js/main.js"></script> -->
+    </body>
+</html>

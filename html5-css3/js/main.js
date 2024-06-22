@@ -16,8 +16,8 @@ function initializeSlider(sliderContainer, dotContainer) {
         } else {
             currentIndex = index;
         }
-        const offset = -currentIndex * 1116;
-        slides.style.transform = `translateX(${offset}px)`;
+        const offset = -currentIndex * 101.5;
+        slides.style.transform = `translateX(${offset}%)`;
         updateDots(currentIndex);
     }
 
@@ -66,7 +66,7 @@ function initializeSlider(sliderContainer, dotContainer) {
         e.preventDefault();
         const x = e.pageX - offset;
         walk = x - startX;
-        slides.style.transform = `translateX(${-currentIndex * slides.offsetWidth + walk}px)`;
+        slides.style.transform = `translateX(${-currentIndex * slides.offsetWidth + walk}%)`;
     });
 
     // Initial display
@@ -81,3 +81,44 @@ initializeSlider(slider1, slider1Dots);
 const slider2 = document.querySelector('.slider-text');
 const slider2Dots = document.querySelector('.slider-text .dots');
 initializeSlider(slider2, slider2Dots);
+
+
+let users = JSON.parse(localStorage.getItem('users'));
+let idUser = JSON.parse(localStorage.getItem('currentUserId'));
+let nameAccount = document.getElementById('name-account')
+
+// console.log(user[0].fullName);
+if (idUser) {
+    let user = users.filter(user => user.id == idUser);
+    nameAccount.textContent = user[0].fullName;
+}
+else {
+    nameAccount.textContent = "";
+}
+
+// function handleResize() {
+//     const width = window.innerWidth;
+//     const searchContainer = document.getElementById('searchContainer');
+//     const contactInfo = document.getElementById('contactInfo');
+
+//     if (width < 768) {
+//         searchContainer.classList.add('hidden');
+//         contactInfo.classList.add('flex-column');
+//     } else {
+//         searchContainer.classList.remove('hidden');
+//         contactInfo.classList.remove('flex-column');
+//     }
+// }
+
+// window.addEventListener('resize', handleResize);
+// document.addEventListener('DOMContentLoaded', handleResize);
+// function navBars() {
+//     document.querySelector('.select').style.display = 'block';
+//     document.querySelector('.header-menu').style.display = 'block';
+//     let show = document.getElementById('show-navbar');
+//     // show.classList = 'flex-direction-column';
+//     // show.style.width = '90%'
+// }
+function dlNone() {
+    document.getElementById('navbarSupportedContent').classList.remove('show');
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Waggy-</title>
+        <title>Waggy - Free eCommerce Pet Shop HTML Website Template</title>
         <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
@@ -56,43 +56,75 @@
                 <hr class="m-0">
             </div>
             <div class="container">
-                <nav class="navigation">
-                    <div class="nav-flex-center">
-                        <select class="select">
-                            <option value>Shop by Category</option>
-                            <option value>Clothes</option>
-                            <option value>Food</option>
-                            <option value>Toy</option>
-                        </select>
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <div class="container-fluid flex-responsive">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse bg-white" id="navbarSupportedContent">
+                            <button class="btn toogler-nav text-align-center" onclick="dlNone()"><i class="fa-solid fa-xmark"></i></button>
+                            <div class="nav-flex-center select-dad">
+                                <select class="form-select">
+                                    <option value="">Shop by Category</option>
+                                    <option value="clothes">Clothes</option>
+                                    <option value="food">Food</option>
+                                    <option value="toy">Toy</option>
+                                </select>
+                            </div>
+                            <div class="nav-flex-center menu-dad">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                                    <li class="nav-item">
+                                        <a class="nav-link link-regular" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle link-regular" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">About Us<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="shop.html">Shop<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Single Product<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="cart.html">Cart<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="wishlist.html">Wishlist<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Checkout<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="blog.html">Blog<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Single Post<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="contact.html">Contact<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">FADs<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="account.html">Account<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Thank you<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Error 404<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                            <li><a class="dropdown-item" href="#">Style<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link link-regular" href="shop.html">Shop</a></li>
+                                    <li class="nav-item"><a class="nav-link link-regular color-in" href="blog.html">Blog</a></li>
+                                    <li class="nav-item"><a class="nav-link link-regular" href="contact.html">Contact</a></li>
+                                    <li class="nav-item"><a class="nav-link link-regular" href="#">Other</a></li>
+                                    <li class="nav-item"><a class="nav-link link-bold" href="cart.html">GET PRO</a></li>
+                                </ul>
+                            </div>
+                        </div>
+            
+                        <div class="item-end nav-flex-center">
+                            <span id="name-account" class="px-1 badge bg-secondary-subtle text-dark fs-6"></span>
+                            <ul class="navbar-nav d-flex flex-row">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="account.html">
+                                        <i class="fa-solid fa-user"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="wishlist.html">
+                                        <i class="fa-solid fa-heart"></i>
+                                    </a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cart.html">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </a></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="nav-flex-center">
-                        <ul class="header-menu">
-                            <li><a href="index.html" class="link-regular">Home</a></li>
-                            <li><a href="#" class="link-regular">Pages</a></li>
-                            <li><a href="#" class="link-regular">Shop</a></li>
-                            <li><a href="blog.html" class="link-regular color-in">Blog</a></li>
-                            <li><a href="contact.html"
-                                    class="link-regular">Contact</a></li>
-                            <li><a href="#" class="link-regular">Other</a></li>
-                            <li><a href="#" class="link-bold">GET PRO</a></li>
-                        </ul>
-
-                    </div>
-
-                    <div class="item-end nav-flex-center">
-                        <ul>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-user"></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-heart"></i>
-                                </a></li>
-                            <li><a href="#">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a></li>
-                        </ul>
-                    </div>
-                </nav>
+                </nav>                     
             </div>
         </header>
         <!-- main -->
