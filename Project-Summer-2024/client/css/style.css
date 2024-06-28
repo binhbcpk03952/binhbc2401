@@ -1,0 +1,40 @@
+:root {
+    --font-body: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+}
+.logo-image img{
+    width: 180px;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.header-search button{
+    border: none;
+    background-color: transparent;
+}
+.header-search button svg.lucide{
+   color: #111;
+}
+.header-search input {
+    border: none;
+    background-color: transparent;
+}
+.header-search input:focus {
+    outline: none;
+}
+.header-search {
+    border: 1px black solid;
+    border-radius: 20px;
+    padding: 3px 10px;
+    background-color: #f2f2f2;
+}
