@@ -1,119 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <!-- Bootstrap CSS -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet">    <!-- Font Awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <style>
-        .nav-flex-center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .select-dad, .menu-dad {
-            flex-grow: 1;
-        }
-        .item-end {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        .badge.bg-secondary-subtle {
-            background-color: #6c757d;
-        }
-        nav {
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Navbar</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <!-- Font Awesome CSS -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chilanka&amp;family=Montserrat:wght@300;400;500&amp;display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet">
+        <style>
+            :root {
+                --secondary-font: 'Montserrat', sans-serif;
+            }
+        body {
             position: relative;
+            font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         }
-        @media (max-width: 600px) {
-            .navbar-collapse {
-                position: absolute;
-                left: 0;
-                top: 30px;
-            } 
-            
+        #navbarDropdown {
+            transform: rotate(90deg);
+            z-index: 1;
+            display: block;
+            /* position: absolute; */
+        }
+        header {
+            position: fixed;
+            /* margin-bottom: 40px; */
+        }
+        .show {
+            position: absolute;
+            top: 0;
+            left: -250px;
+            /* display: none; */
+            width: 100%;
+            transition: opacity 0.3s ease;
+            background-color: bisque;
+            height: 100vh;
+            z-index: 0;
+            /* transition: transform(0%); */
+            margin-top: 56px;
+            opacity: 0;
+            transition: 0.1s;
+        }
+        .add {
+            opacity: 1;
+            left: -15px;
+            /* display: block; */
+            transition: 0.1s;
+            /* pointer-events: visible; */
+        }
+        .add-to-cart {
+            opacity: 0;
+            pointer-events: none;
+            width: 300px;
+            border-radius: 10px;
+            color: #fff;
+            font-weight: bold;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 2s;
+        }
+        .show-cart {
+            opacity: 1;
+            pointer-events: visible;
+            top: 50px;
+        }
+        aside {
+            padding: 0;
+        }
+        .side-bar {
+            /* position: relative; */
+            position: fixed;
+            width: 16.66666667%;
+        }
+        .navigation {
+            position: relative;
+            width: 100%;
         }
     </style>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <div class="nav-flex-center select-dad">
-                    <select class="form-select">
-                        <option value="">Shop by Category</option>
-                        <option value="clothes">Clothes</option>
-                        <option value="food">Food</option>
-                        <option value="toy">Toy</option>
-                    </select>
-                </div>
-                <div class="nav-flex-center menu-dad">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link link-regular color-in" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle link-regular" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">About Us<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="shop.html">Shop<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="#">Single Product<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="cart.html">Cart<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="wishlist.html">Wishlist<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="#">Checkout<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="blog.html">Blog<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="#">Single Post<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="contact.html">Contact<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="#">FADs<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="account.html">Account<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="#">Thank you<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="#">Error 404<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                                <li><a class="dropdown-item" href="#">Style<span class="badge bg-secondary text-dark ms-2">PRO</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a class="nav-link link-regular" href="shop.html">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link link-regular" href="blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link link-regular" href="contact.html">Contact</a></li>
-                        <li class="nav-item"><a class="nav-link link-regular" href="#">Other</a></li>
-                        <li class="nav-item"><a class="nav-link link-bold" href="cart.html">GET PRO</a></li>
-                    </ul>
-                </div>
+    </head>
+    <body>
+        <header class="bg-dark w-100">
+            <div class="d-flex">
+                <button class="btn d-block text-white" id="navbarDropdown"
+                    onclick="showDropdown(event)">|||</button>
+                <h1 class="text-white mx-3">
+                    Admin
+                    <i class="fa-regular fa-face-smile-wink"></i>
+                </h1>
             </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row">
+                <aside class="aside col-lg-2">
+                    <div class="side-bar">
+                        <div class="navigation">
+                            <ul id="dropdown-menu"
+                                class="show w-100 pt-5 bg-dark">
+                                <li class="dropdown-item"><a href="#"
+                                        class="nav-link text-white">CON</a></li>
+                                <li class="dropdown-item text-white">fff</li>
+                                <li class="dropdown-item text-white">fffff</li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+                <main class="mt-5">
+                    <section class="mt-3">
+                        <button class="btn btn-light" onclick="addToCart()">Add
+                            to Cart</button>
 
-            <div class="item-end nav-flex-center">
-                <span id="name-account" class="px-1 badge bg-secondary-subtle text-dark fs-6"></span>
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="account.html">
-                            <i class="fa-solid fa-user"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="wishlist.html">
-                            <i class="fa-solid fa-heart"></i>
-                        </a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </a></li>
-                </ul>
+                        <div class="add-to-cart bg-primary p-4" id="cart">Thêm
+                            vào giỏ hàng thành công</div>
+
+                        <div class="img">
+                            <img src="../ASIGNMENT/photo/asics-nova-flow.webp"
+                                alt>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Distinctio quibusdam blanditiis delectus, odit
+                            natus officiis inventore nisi eum beatae, unde illo
+                            earum voluptatem non animi! Recusandae corrupti
+                            repellendus omnis eveniet!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Quo, quasi ducimus harum perspiciatis quidem
+                            quaerat voluptatum numquam ad molestiae corporis
+                            commodi provident doloribus sequi quas voluptate
+                            sit? Quibusdam, ratione enim.</p>
+                    </section>
+                </main>
             </div>
         </div>
-    </nav>
 
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        <!-- Bootstrap JS and dependencies -->
+        <script>
+        // 
+        function showDropdown(event) {
+            // event.preventDefault();
+            var dropdownMenu = document.querySelector('#dropdown-menu');
+            dropdownMenu.classList.toggle('add');
+            if (dropdownMenu.classList.contains('add')) {
+                document.querySelector('main').classList.add('col-lg-10')
+            }
+            else {
+                document.querySelector('main').classList.remove('col-lg-10')
+            }
+        }
+        // document.body.addEventListener('click', (e) => {
+        //     var dropdownToggle = document.querySelector('#navbarDropdown');
+        //     var dropdownMenu = document.querySelector('#dropdown-menu');
+
+        //     if (!dropdownMenu.contains(e.target) && !dropdownToggle.contains(e.target)) {
+        //         dropdownMenu.classList.remove('add');
+        //     }
+        // });
+
+        function addToCart() {
+            showCart();
+        }
+        function showCart() {
+            const addCart = document.querySelector('#cart');
+            // console.log(addCart);
+            addCart.classList.add('show-cart');
+            setTimeout(() => {
+                addCart.classList.remove('show-cart');
+            }, 3000);
+        }
+
+    </script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
